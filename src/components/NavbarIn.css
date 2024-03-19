@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.search-form {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.drawer-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.drawer {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-link {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.drawer-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.drawer-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.drawer-search-form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.drawer-search-form button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.drawer-search-form button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .drawer-toggle {
+    display: block;
+  }
+
+  /* .drawer {
+    display: ${props => props.showDrawer ? 'flex' : 'none'};
+  } */
+}
